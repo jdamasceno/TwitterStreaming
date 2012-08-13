@@ -16,10 +16,6 @@
       <id>twitter4j</id>
       <url>http://twitter4j.org/maven2</url>
     </repository>
-    <repository>
-      <id>local</id>
-      <url>file:./maven_repository/</url>
-    </repository>
   </repositories>
   <dependencies>
   		<dependency>

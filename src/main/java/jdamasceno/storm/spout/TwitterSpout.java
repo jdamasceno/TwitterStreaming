@@ -63,7 +63,7 @@ public class TwitterSpout implements IRichSpout {
         _twitterStream.addListener(listener);
         //Magic filter
         FilterQuery filter = new FilterQuery();
-        filter.track(new String[]{"futebol"});
+        filter.track(new String[]{"a"});
         _twitterStream.filter(filter);
     }
 

@@ -24,7 +24,7 @@ public class TwitterTopology {
 		builder.setSpout("twitter", twitterSpout);
 		
 		builder.setBolt("mongo", new MongoBolt(), 2).shuffleGrouping("twitter");
-		builder.setBolt("print", new PrintTweetBolt(), 2).shuffleGrouping("twitter");
+//		builder.setBolt("print", new PrintTweetBolt(), 2).shuffleGrouping("twitter");
 		
 		Config conf = new Config();
         conf.setDebug(false);
